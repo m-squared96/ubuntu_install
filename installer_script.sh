@@ -2,7 +2,7 @@ cd $HOME
 
 sudo apt update
 
-sudo apt install vim octave liboctave-dev firefox texstudio texlive texlive-extra-utils libreoffice gnome-mpv tilix virtualbox python3-pip python3-tk jupyter-notebook ipython3 neofetch git gimp youtube-dl
+sudo apt install vim octave liboctave-dev firefox texstudio texlive texlive-extra-utils libreoffice gnome-mpv tilix python3-pip python3-tk jupyter-notebook ipython3 neofetch git gimp youtube-dl
 
 cp -r .vim ~/
 cp .vimrc ~/
