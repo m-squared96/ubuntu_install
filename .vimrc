@@ -13,4 +13,6 @@ set ruler
 syntax on
 set showcmd
 
-colorscheme monokai-phoenix
+colorscheme mopkai
+
+call pathogen#infect()
