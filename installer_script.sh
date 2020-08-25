@@ -4,6 +4,8 @@ sudo apt -y install curl gcc g++ git gnome-multi-writer gzip jupyter latte-dock 
 
 cp -r .vim ~/
 cp .vimrc ~/
+cp .bash_aliases ~/
+source ~/.bashrc
 
 sudo snap refresh
 sudo snap install telegram-desktop --classic
@@ -28,7 +30,7 @@ cd ~/code/
 python3 -m venv dsci
 cd dsci
 source bin/activate
-pip3 install jupyter numpy pandas matplotlib seaborn scikit-learn statsmodels 
+pip3 install jupyter numpy pandas matplotlib seaborn scikit-learn statsmodels black 
 deactivate
 
 cd ../
@@ -37,7 +39,7 @@ cd projects/
 python3 -m venv pyplanedev
 cd pyplanedev
 source bin/activate
-pip3 install numpy matplotlib scipy PyQt5 PyYAML sympy pre-commit
+pip3 install numpy matplotlib scipy PyQt5 PyYAML sympy black pre-commit
 deactivate
 
 cd ../
@@ -48,3 +50,5 @@ cd $HOME
 
 mkdir stats/
 mkdir maths/
+
+vim +PluginInstall +qall
