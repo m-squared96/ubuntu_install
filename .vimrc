@@ -6,6 +6,9 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
+set updatetime=100
+set laststatus=2
+set noshowmode
 
 set backspace=indent,eol,start
 
@@ -46,6 +49,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
+Plugin 'psf/black'
+Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'dense-analysis/ale'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()            " required
 filetype plugin indent on 
